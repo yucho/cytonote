@@ -1,0 +1,21 @@
+{
+  "name": "cytonote",
+  "version": "0.1.0",
+  "description": "A visually intuitive way to take notes",
+  "private": true,
+  "author": "Yucho Ho <yucho.ho@gmail.com> (https://yuchoho.com)",
+  "bugs": {
+    "url": "https://github.com/yucho/cytonote/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yucho/cytonote"
+  },
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  },
+  "license": "ISC"
+}
