@@ -1,0 +1,62 @@
+<!--
+Template that lists all 'name' in 'notes' collection.
+Not useful for anything, just to make sure that DB works.
+-->
+<template name="listAllNotes">
+<section class="listAllNotes">
+	<style>
+	.listAllNotes {
+		display: block;
+	}
+	.listAllNotes div {
+		width: 50%;
+		float: left;
+	}
+	.listAllNotes table {
+		border-collapse: collapse;
+		overflow: auto;
+	}
+	.listAllNotes table, td {
+	    border: 1px solid #ccc;
+	}
+	.clear {
+		clear: both;
+	}
+	</style>
+	<div>
+	<h3>Nodes</h3>
+		<table>
+		<thead>
+			<tr>
+				<td></td><td>name</td><td>id</td>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each nodes}}
+			<tr>
+				<td><input type="button" value="&times;" class="deleteNode" /></td><td>{{name}}</td><td>{{id}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+		</table>
+	</div>
+	<div>
+	<h3>Edges</h3>
+	<table>
+		<thead>
+			<tr>
+				<td></td><td>name</td><td>source</td><td>target</td>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each edges}}
+			<tr>
+				<td><input type="button" value="&times;" class="deleteEdge" /></td><td>{{name}}</td><td>{{source}}</td><td>{{target}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+	</div>
+</section>
+<div class="clear"></div>
+</template>

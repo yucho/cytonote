@@ -8,5 +8,6 @@ Clone this repository and run:
 meteor npm install
 meteor
 ```
+
 ### Notes
 - Package is private. Remove it when publish-ready.

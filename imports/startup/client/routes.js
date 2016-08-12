@@ -1,2 +1,4 @@
 // Import all templates
-import '../../ui/client/list-all-notes.js';
+import '../../ui/components/list-all-notes.js';
+import '../../ui/components/draw-all-notes.js';
+import '../../ui/components/insert-note.js';

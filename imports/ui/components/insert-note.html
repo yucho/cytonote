@@ -1,0 +1,31 @@
+<!--
+Template to insert note. Currently very primitive, so users
+must enter valid JS object that follows node/edge data schema.
+-->
+<template name="insertNote">
+<section class="insertNote">
+<style>
+.insertNote {
+	display: block;
+}
+.insertNote form {
+	width: 50%;
+	float: left;
+}
+.clear {
+	clear: both;
+}
+</style>
+<form class="insertNode">
+	<input type="text" name="name" placeholder="node name" />
+	<input type="submit" />
+</form>
+<form class="insertEdge">
+	<input type="text" name="name" placeholder="edge name" />
+	<input type="text" name="source" placeholder="source node id" />
+	<input type="text" name="target" placeholder="target node id" />
+	<input type="submit" />
+</form>
+</section>
+<div class="clear"></div>
+</template>

@@ -15,6 +15,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "cytoscape": "^2.7.7",
     "meteor-node-stubs": "~0.2.0"
   },
   "license": "ISC"
